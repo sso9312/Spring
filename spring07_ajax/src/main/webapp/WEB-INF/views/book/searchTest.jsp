@@ -42,6 +42,26 @@
 	 
 	 function responseProc(data) {
 		//alert(data);
+		//예)3|자바, 자바 프로그래밍, 자바 안드로이드
+		
+		if(data.length>0){//응답받은 내용이 있는지?
+			// | 기호를 기준으로 문자열 분리
+			let result = data.split("|");
+			//alert(result[0]);
+			//alert(result[1]);
+			let str = result[1].split(",");
+			let title=""; //최종값
+			$.each(str, function(index, key) {
+				//alert(index); 순서
+				//alert(key); 내용
+				title += "<a href='#'>" + key + "</a>";
+				title += "<br>";
+			}); //each() end
+			$("#pane1").html(title);
+			$("#pane1").show();
+		}else{
+			$("#pane1").hide();
+		}//if end
 	}//responseProc() end
 	 
    </script>
