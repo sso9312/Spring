@@ -1,0 +1,22 @@
+-- mediagroup_sql.txt
+
+
+-- 미디어 그룹 테이블 생성
+CREATE TABLE mediagroup (
+  mediagroupno NUMBER        NOT NULL PRIMARY KEY, -- 그룹번호
+  title        VARCHAR2(255) NOT NULL              -- 그룹제목 
+);
+
+
+-- 시퀀스 생성
+create sequence mediagroup_seq;
+
+-- 행 삭제
+delete from mediagroup where mediagroupno=2;
+delete from mediagroup where mediagroupno=2;
+delete from mediagroup where mediagroupno=2;
+
+-- 행 수정
+select * form mediagroup where mediagroupno=22
+update mediagroup set title=? where mediagroupno=22
+
