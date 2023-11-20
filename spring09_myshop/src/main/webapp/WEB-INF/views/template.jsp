@@ -1,23 +1,24 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core"%>    
-<%@ taglib prefix="fn"  uri="http://java.sun.com/jsp/jstl/functions"%>    
-<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>    
+<%@ taglib prefix="c"   uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn"  uri="http://java.sun.com/jsp/jstl/functions" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+    
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <title>My Shop</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="/js/jquery-3.7.1.min.js"></script>
-  <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <title>My Shop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="/js/jquery-3.7.1.min.js"></script>
+	<link href="/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-<div class="p-5 bg-primary text-white text-center">
+<div class="p-5 bg-info text-white text-center">
   <h1>My Shop</h1>
 </div>
 
@@ -28,22 +29,22 @@
         <a class="nav-link active" href="/product/list">상품</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/cart/list">장바구니</a>
+        <a class="nav-link active" href="/cart/list">장바구니</a>
       </li>
     </ul>
   </div>
 </nav>
 
 <div class="container text-center">
-<!-- 본문 시작 -->
-
+  <!-- 본문 시작 -->
+  
   <div class="row">
     <div class="col-sm-12">
-   	본문내용을 여기에서 작성
+    	본문내용은 여기에서 작성
     </div><!-- col end -->
   </div><!-- row end -->
-
-<!-- 본문 끝 -->
+    
+  <!-- 본문 끝 -->
 </div><!-- container end -->
 
 <div class="mt-5 p-4 bg-dark text-white text-center">
@@ -52,3 +53,4 @@
 
 </body>
 </html>
+    
