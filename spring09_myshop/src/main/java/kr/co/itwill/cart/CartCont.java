@@ -1,7 +1,10 @@
 package kr.co.itwill.cart;
 
+import java.util.HashMap;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -43,5 +46,21 @@ public class CartCont {
 		return mav;
 	}//list() end
 	
+	@GetMapping("/delete")
+	public String delete(int cartno, HttpSession session) {
+		//delete from cart where cartno=? and id=?
+		//CartDTO cartDto = new CartDTO();
+		//cartDto.setCartno(cartno);
+		//cartDto.setId(session.getAttribute("세션변수명"));
+		//cartDao.cartDelete(cartDto);
+		
+		HashMap<String, Object> map = new HashMap<>();
+		map.put("no", cartno);
+		//map.put("s_id", session.getAttribute("세션변수명"));
+		map.put("s_id", "itwill");
+		cartDao.cartDelete(map);
+		return "redirect:/cart/list";
+		
+	}
 	
 }//class end

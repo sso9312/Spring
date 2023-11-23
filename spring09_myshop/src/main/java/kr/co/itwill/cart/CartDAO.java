@@ -1,5 +1,6 @@
 package kr.co.itwill.cart;
 
+import java.util.HashMap;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
@@ -23,4 +24,7 @@ public class CartDAO {
 		return sqlSession.selectList("cart.list", id);
 	}//list() end
 	
+	public int cartDelete(HashMap<String, Object> map) {
+		 return sqlSession.delete("cart.delete", map);
+	 }
 }//class end
