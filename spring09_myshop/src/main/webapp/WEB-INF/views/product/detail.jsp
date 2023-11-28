@@ -105,7 +105,7 @@
 			 	<tr>
 			 		<td>상품수량</td>
 			 		<td>
-			 			<select name="qty" class="form-control">
+			 			<select name="qty" id="qty" class="form-control">
 			 				<option value="0">◎선택◎</option>
 			 				<option value="1">1</option>
 			 				<option value="2">2</option>
